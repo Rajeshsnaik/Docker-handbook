@@ -16,7 +16,7 @@ Docker solves the common **“works on my machine”** problem by packaging an a
 
 ## Virtual Machines vs Containers
 
-[image.png](./vm-containers.png)
+![image.png](./vm-containers.png)
 
 A **Virtual Machine (VM)** virtualizes an entire computer, including its operating system, so each VM has its own OS running on top of a hypervisor. This makes VMs more isolated but also heavier because each one needs CPU, memory, storage, and a full operating system. **Containers**, on the other hand, share the host operating system’s kernel and package only the application and its required dependencies. Because they do not need a separate full OS, containers are generally **lighter, faster to start, and more efficient with resources** than VMs.
 
@@ -24,7 +24,7 @@ A **Virtual Machine (VM)** virtualizes an entire computer, including its operati
 
 ## Image vs Container
 
-[image.png](./image-containers.png)
+![image.png](./image-containers.png)
 
 A **Docker Image** is like a blueprint or template that contains everything required to run your application, such as the application code, runtime, dependencies, and configuration. A **Container** is a running instance created from that image. When you execute `docker run`, Docker takes the image and creates a container from it. The same image can be used to create multiple containers, so you can think of an **Image as the blueprint** and a **Container as the running building**.
 
@@ -56,7 +56,7 @@ Containers are lightweight because they use a technology called containerization
 
 ### Docker Architecture
 
-[architecture.png](./architecture.png)
+![architecture.png](./architecture.png)
 
 Docker architecture describes how you interact with Docker and how Docker manages your applications. When a developer runs a Docker command using the **Docker CLI**, the request is handled by the **Docker Daemon**, which is the background service responsible for managing Docker objects. The daemon works as part of the **Docker Engine** to build images and create, run, and manage containers. These containers then run the application using the required Docker images. In simple terms, the flow is -
 
@@ -96,7 +96,7 @@ A **Docker Registry** is a storage system for Docker images. Developers can **pu
 
 ### Complete Docker Flow
 
-[flow.png](./flow.png)
+![flow.png](./flow.png)
 
 Imagine you have a Node.js application. You first create a **Dockerfile** that defines how your application should be packaged, then use `docker build` to create a **Docker Image**. You can run that image using `docker run`, which creates a **Docker Container** where your Node.js application runs.
 
