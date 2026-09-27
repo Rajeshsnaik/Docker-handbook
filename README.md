@@ -11,6 +11,7 @@ This repository is designed for **beginners, DevOps engineers, Cloud engineers, 
 | Day | Topic                                  | Repository                                               |
 | --: | -------------------------------------- | -------------------------------------------------------- |
 |  01 | **Docker Introduction & Fundamentals** | [View Topic](./01-Docker-Introduction-and-Fundamentals/) |
+|  02 | **Docker Images**                      | [View Topic](./02-Docker%20Images/)                      |
 
 ---
 
